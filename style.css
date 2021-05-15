@@ -4,6 +4,19 @@
 ========================================== */
 /* RESET
 ========================================== */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 3s;
+}
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -11,7 +24,7 @@
 }
 
 body {
-  background: #051321;
+  background: #282727;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -90,7 +103,7 @@ body {
 }
 .contact main section .content aside h1 {
   font-weight: 100;
-  font-size: 22px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 .contact main section .content aside p {
@@ -101,7 +114,7 @@ body {
 .contact main .title {
   float: left;
   width: 100%;
-  background-color: #c63535;
+  background-color: #3078C1;
   max-height: 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -149,7 +162,7 @@ body {
   bottom: 0;
   right: 50%;
   background-color: #ffbe44;
-  color: #c63535;
+  color: #000000;
   border: 0;
   width: 200px;
   height: 48px;
