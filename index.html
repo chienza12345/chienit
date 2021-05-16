@@ -1,1 +1,152 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script><link rel="stylesheet" href="main.css"><link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><script src="javascript/nlar.js"></script><title>About Me</title></head><body ng-app="myApp" ng-controller="myController"><div class="container-fluid mt-4"><div class="row"><div class="col-12 text-center"><p class="pt-3 abm needtoMask">{{abm}}</p><br><small class="text-muted needtoMask update mb-2">{{updateInfo}}</small><div class="jumbotron"><div class="avatar"><img src="img/avatar.jpg" class="img-fluid" alt="Avatar"><div class="avatar_layer"><svg id="Layer_a" data-name="Layer a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202 202"><defs><style>.cls-a{fill:none;stroke:#34a853;stroke-miterlimit:10;stroke-width:1.2px}</style></defs><circle class="cls-a" cx="101" cy="101" r="100"/></svg></div></div><div class="verify mt-2"><small class="roboto" style="font-size:14pt;color:#4bb969"><i class="ion-android-checkmark-circle"></i> {{verify}}</small></div><div class="col-12"><h3 class="roboto name mt-3" style="font-weight:100;color:#4285f4">Lư Minh Thông <span class="ion-ios-pulse"></span></h3><p class="crush roboto">{{des}}</p><hr><div class="row"><div class="col-12 col-md-6"><h4 class="jobh4 p-1 mb-2">{{cv}}</h4><div class="job_content"><p><span class="ion-ios-world-outline" style="font-size:15pt"></span> {{job1}}</p><p><span class="ion-social-usd"></span> {{job2}}</p></div></div><div class="col-12 col-md-6"><h4 class="contacth4 p-1 mb-2">{{contact}}</h4><div class="contact_content"><i class="fab fa-chrome text-muted"></i><p class="hovering"><span class="ion-paper-airplane" style="font-size:15pt"></span> {{contact1}}</p><p class="hovering"><span class="ion-social-facebook"></span>  {{contact2}}</p></div></div></div><div class="row justify-content-center"><div class="col-10 col-md-4"><a class="btn btn-primary btn-block ctcme roboto" style="color:#f4f4f4" data-toggle="modal" data-target="#exampleModal"><span class="ion-ionic"></span> {{contactmi}}</a></div><div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title text-muted" id="exampleModalLabel">{{ifyou}}</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="pt-1 ion-ios-close"></span></button></div><div class="modal-body"><div class="container"><div class="row justify-content-center"><div class="col-12"><span class="ion-ios-chatbubble text-info col-6" style="font-size:24pt"></span></div></div><div class="row justify-content-center"><a href="{{linkfb}}" target="_blank" class="btn btn-primary btn-block col-6 mb-3">{{modal1}}</a></div><div class="row justify-content-center"><a href="{{linkzl}}" target="_blank" class="btn btn-info btn-block col-6 mb-3">{{modal2}}</a></div><div class="row justify-content-center"><a href="{{linksc}}" target="_blank" class="btn btn-warning btn-block col-6 mb-3">{{modal3}}</a></div><div class="row justify-content-center"><a class="btn btn-danger btn-block col-6 mb-3" ng-click="reverse2()">{{modal4}}</a></div><div class="row justify-content-center"><code class="roboto col-6 mb-3 text-muted" ng-show="gmail" style="font-size:12pt;color:#f4f4f4">{{email}}</code></div><div class="row justify-content-center"><a ng-click="reverse()" class="btn btn-success btn-block col-6 mb-3" style="color:#f3f3f3">{{modal5}}</a></div><div class="row justify-content-center"><code class="roboto col-6 py-2 text-muted" ng-show="phone" style="font-size:12pt">{{phonenumber}}</code></div></div></div></div></div></div></div></div></div></div></div></div><div class="container"><div class="row text-center"><h2 class="col-12 display-4 text-success ms">{{title2}} <span class="ion-bookmark mt-2"></span></h2></div><div class="row my-5"><div class="col-12 text-center"><span class="ion-social-nodejs display-1 planet"></span><br><a href="https://anonyviet.com" target="_blank" style="opacity:.2;font-size:10pt;text-decoration:none;cursor:default" class="motivation">{{au}}</a></div></div><div class="row mt-5 mb-4"><div class="col-12"><div class="row"><div class="img1 col-12 col-lg-4"><img src="img/story1.jpg" class="img-fluid"></div><div class="col-12 col-lg-8 py-2 py-lg-0 ulong"><h4 class="text-primary">{{storytitle1}}</h4><hr><p>{{contentStory1}}</p><small class="float-right text-danger">{{nothinglikeus}} <span class="ion-ios-heart ml-1"></span></small></div></div></div></div><div class="row mt-5 mb-4"><div class="col-12"><div class="row"><div class="img2 col-12 col-lg-4"><img src="img/story2.png" class="img-fluid"></div><div class="col-12 col-lg-8 py-2 py-lg-0 ulang"><h4 class="text-primary">{{storytitle2}}</h4><hr><p>{{contentStory2}}</p><div>{{thankall}}</div><small class="float-right text-danger">{{nothinglikeus}} <span class="ion-ios-heart ml-1"></span></small></div></div></div></div></div><script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><script src="javascript/anm.js"></script><script src="javascript/cm.js"></script><script src="javascript/scrm.js"></script><script src="javascript/myscript.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PROFILE CHIENIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="contact-area">
+  <div class="contact">
+    <main>
+      <section>
+
+        <div class="content">
+          <img src="#" alt="Profile Image">
+
+          <aside>
+            <h1 class="fade-in">CHIEN-IT</h1>
+              <div style="font-size: 18px">
+<div style="font-size: 18px">
+<script type="text/javascript">
+farbbibliothek = new Array();
+farbbibliothek[0] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000");
+farbbibliothek[1] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000");
+farben = farbbibliothek[0];
+function farbschrift(){for(var b=0;b<Buchstabe.length;b++){document.all["a"+b].style.color=farben[b]}farbverlauf()}function string2array(b){Buchstabe=new Array();while(farben.length<b.length){farben=farben.concat(farben)}k=0;while(k<=b.length){Buchstabe[k]=b.charAt(k);k++}}function divserzeugen(){for(var b=0;b<Buchstabe.length;b++){document.write("<span id='a"+b+"' class='a"+b+"'>"+Buchstabe[b]+"</span>")}farbschrift()}var a=1;function farbverlauf(){for(var b=0;b<farben.length;b++){farben[b-1]=farben[b]}farben[farben.length-1]=farben[-1];setTimeout("farbschrift()",30)}var farbsatz=1;function farbtauscher(){farben=farbbibliothek[farbsatz];while(farben.length<text.length){farben=farben.concat(farben)}farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001))}setInterval("farbtauscher()",5000);
+
+text= "HI,I'M CHIENIT AND A WEB DEVELOPER"; //h
+string2array(text);
+divserzeugen();
+//document.write(text);
+</script></div>
+</script></div>
+          </aside>
+          
+          <button>
+            <span>Liên hệ với tôi</span>
+       
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
+          </button>
+        </div>
+
+
+
+
+
+        <div class="title"><p>Liên hệ với tôi</p></div>
+      </section>
+
+      
+    </main>
+
+    <nav>
+      <a>
+       <audio src="music/music1.mp3" controls>  
+<h1 class="fade-in">CHIEN-IT</h1>
+</audio>
+  </a>
+
+       <a href="https://www.facebook.com/MeoCayThuePUBGM/" class="facebook">
+        <div class="icon">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
+        </div>
+
+
+        <div class="content">
+          <h1>Facebook</h1>
+          <span>Lưu Chiến</span>
+        </div>
+        
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+      </a>
+
+      <a href="mailto:luuchien2108@gmail.com" class="gmail">
+        <div class="icon">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/></svg>
+        </div>
+
+        <div class="content">
+          <h1>Email</h1>
+          <span>luuchien2108@gmail.com</span>
+        </div>
+        
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
+      </a>
+
+
+
+       <a href="#/" class="gmail">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000"><path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm.294 7h-.589l-1.101.013c-1.48.024-3.709.092-4.465.285a1.836 1.836 0 0 0-1.326 1.263c-.181.644-.258 1.69-.29 2.46l-.022.815v.328l.008.426c.022.764.09 2.088.304 2.849.172.614.68 1.098 1.326 1.263.736.188 2.867.257 4.346.283L11.89 17l1.159-.008c1.453-.019 3.993-.082 4.811-.29a1.836 1.836 0 0 0 1.327-1.263c.21-.75.28-2.048.302-2.817l.01-.528-.003-.403c-.012-.67-.066-2.265-.31-3.13a1.836 1.836 0 0 0-1.326-1.263c-.661-.169-2.45-.242-3.878-.274L12.294 7zm-1.828 2.89l3.92 2.11-3.92 2.11V9.89z"/></svg>
+        </div>
+
+
+        <div class="content">
+          <h1>Youtube</h1>
+          <span>Lưu Chiến</span>
+        </div>
+
+        <a href="tel:0944038036" class="#l">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#18ff26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </div>
+
+
+        <div class="content">
+          <h1 style="color:green">CALL</h1>
+          <span>0944038036</span>
+        </div>
+
+        <a href="sms:0944038036" class="#l">
+          <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#09c944" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+        <div class="content">
+          <h1 style="color:green">SMS</h1>
+          <span>Lưu Chiến</span>
+        </div>
+
+        <a href="https://poplme.co/addtocontacts/303666/" class="#l">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#09c944" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"/><circle cx="12" cy="10" r="3"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+
+
+        <div class="content">
+          <h1 style="color:green">ADD CONTACT</h1>
+          <span></span>
+        </div>
+
+
+                 <a href="https://goo.gl/maps/7chQuj7NdspqVH4n9" class="#l">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#d77f88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+
+        <div class="content">
+          <h1 style="color:red">ĐỊA CHỈ</h1>
+          <span>Lưu Chiến</span>
+        </div>
+      </a>
+    </nav>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
